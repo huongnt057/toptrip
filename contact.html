@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,800" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Home Page</title>
+
+	<!-- Bootstrap -->
+	<link href="assets/css/aos.min.css" rel="stylesheet">
+	<link href="assets/css/swiper.min.css" rel="stylesheet">
+	<link href="assets/css/lightgallery.min.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-precomposed.png">
+	<link rel="icon" href="assets/ico/favicon.ico">
+</head>
+
+<body class="home-page" data-active="home-page" id="page" data-spy="scroll" data-target=".navbar" data-offset="100">
+	<div class="wrapper">
+		<header id="header" class="site-header">
+				<div class="container">
+					<nav id="sticky-navbar" class="navbar navbar-default navbar-fixed-top nav-catogery" role="navigation" data-spy="affix" data-offset-top="60" data-offset-bottom="244">
+					<div class="container container-lg">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<a href="#" id="mobile-search" class="mb-search-pc visible-xs toggle-cascade" data-content=".box-search">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</a>
+							<!-- show icon search mobile -->
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand navbar-logo" href="index.html"><img class="default-logo" src="assets/images/logo-white.svg" alt="Logo"><img class="secondary-logo" src="assets/images/logo-white.svg" alt="Logo"></a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav menutop">
+								<li class="active"><a href="listtour.html">Tour hấp dẫn</a></li>
+								<li><a href="new.html">Cẩm nang du lịch</a></li>
+								<li><a href="listtour.html">Thông tin tour</a></li>
+							</ul>
+							<ul class="nav navbar-nav select-language">
+								<li class="dropdown open">
+			                       <a href="#" data-toggle="modal" data-target="#mysupport"> 
+			                            <i class="icon icon-support" aria-hidden="true"></i>
+			                        </a>
+			                    </li>
+			                    <li class="dropdown">
+			                    	<a href="#" class="dropdown-toggle" id="language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> 
+			                    			Tiếng Anh
+			                    			<i class="fa fa-angle-down" aria-hidden="true"></i>
+			                    	</a>
+			                    	<ul class="dropdown-menu language" aria-labelledby="language">
+				                    	 <li>
+					                    	 <a href="#">Tiếng Việt</a>
+
+				                    	 </li>
+			                    	</ul>
+			                    </li>
+							</ul>	
+							<!-- popup support -->
+							<div id="mysupport" class="modal fade model-popup" role="dialog">
+							  <div class="modal-dialog">
+
+							    <!-- Modal content-->
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal">&times;</button>
+							        <h4 class="modal-title">Hỗ trợ</h4>
+							      </div>
+							      <div class="modal-body">
+							        <p class="text-center">Gọi ngay đến số  08 526 565 để được hỗ trợ</p>
+							      </div>
+							      
+							    </div>
+
+							  </div>
+							</div>
+						</div><!-- /.navbar-collapse -->
+					</div>
+				</nav>
+				</div>
+			</header>
+<main id="main" class="site-main">
+	<section class="gallery">
+		<div class="overlay-slide"></div>
+		<img src="assets/images/slide-contact.jpg">
+	</section>
+	<section class="contactpage">
+		<div class="container">
+			<div class="breadcrumb-new">
+				<ul	class="breadcrumb scroll-y">
+					<li><a href="index.html">Trang chủ</a></li>
+					<li class="active">Liên hệ</li>
+				</ul>
+			</div>
+			<div class="page-bottom contact">
+				<div class="row">
+					<div class="col-md-8 col-sm-8">
+						<div class="box_style_1">
+							<div class="page-bottom-title">
+								<span>Thông tin liên hệ</span>
+							</div>
+							<div class="step">
+				            
+								<div id="message-contact"></div>
+								<form method="post" action="assets/contact.php" id="contactform">
+									<div class="row">
+										<div class="col-md-6 col-sm-6">
+											<div class="form-group">
+												<label for="name_contact">Họ</label>
+												<input type="text" class="form-control" id="name_contact" name="name_contact" placeholder="Enter Name">
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<div class="form-group">
+												<label for="lastname_contact">Tên</label>
+												<input type="text" class="form-control" id="lastname_contact" name="lastname_contact" placeholder="Enter Last Name">
+											</div>
+										</div>
+									</div>
+									<!-- End row -->
+									<div class="row">
+										<div class="col-md-6 col-sm-6">
+											<div class="form-group">
+												<label for="email_contact">Email</label>
+												<input type="email" id="email_contact" name="email_contact" class="form-control" placeholder="Enter Email">
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<div class="form-group">
+												<label for="phone_contact">Điện thoại</label>
+												<input type="text" id="phone_contact" name="phone_contact" class="form-control" placeholder="Enter Phone number">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label for="message_contact">Tin nhắn</label>
+												<textarea rows="5" id="message_contact" name="message_contact" class="form-control" placeholder="Write your message" style="height:200px;"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<input type="submit" value="Submit" class="btn btn-primary" id="submit-contact">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="box_style_1">
+							<span class="style-text-top">	Địa chỉ</span>
+							
+								Tầng 3A tòa nhà Hoàng Ngọc - Duy Tân - Cầu Giấy, Hà Nội
+						</div>
+						<div class="box_style_1 top-buffer">
+						<span class="style-text-top">	Hotline</span>
+							<p><a href="tel://004542344599" class="phone">+45 423 445 99</a></p>
+							<p>Monday to Friday 9.00am - 7.30pm</p>
+						</div>
+						<div class="box_style_1 top-buffer">
+							<span class="style-text-top">Hỗ trợ nhanh</span>
+							<p><a href="tel://004542344599" class="phone">+45 423 445 99</a></p>
+							Monday to Friday 9.00am - 7.30pm
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+		<footer id="footer" class="site-footer">
+		<p id="back-top" style="display: block;">
+	    	<a href="#top"><span><i class="fa fa-arrow-up" aria-hidden="true"></i></span></a>
+	    </p>
+				<div class="site-info">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-2 col-md-2 col-xs-12">
+								<img src="assets/images/logo-color.svg" alt="" class="img-logo">
+							</div>
+							<div class="col-sm-3 col-md-4 col-xs-12 infocompany">
+								<ul>
+									<li class="namecompany">Công ty TNHH Toptrip Việt Nam</li>
+									<li><i class="fa fa-map-marker" aria-hidden="true"></i>Địa chỉ: Tầng 3A tòa nhà Hoàng Ngọc - Duy Tân - Cầu Giấy, Hà Nội.</li>
+									<li><i class="fa fa-phone" aria-hidden="true"></i>04 6260 3530</li>
+								</ul>
+							</div>
+							<div class="col-sm-3 col-md-3 col-xs-12 linkfooter">
+								<ul>
+									<li>Hỗ trợ online</li>
+									<li><a href="intro.html" title="">Giới thiệu</a></li>
+									<li><a href="support.html" title="">Thanh toán an toàn & linh hoạt</a></li>
+									<li><a href="support.html" title="">Đặt tour dễ dàng & nhanh chóng</a></li>
+									<li><a href="contact.html" title="">Liên hệ</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-3 col-md-3 col-xs-12">
+								<span>Sign up for our mailing list to get latest updates and offers.</span>
+								<div class="form-group newsletter">
+									<input id="newsEmail" type="text" class="form-control" data-type="email" placeholder="Enter your email address" name="email" autocomplete="off">
+									<button class="btn newsbtn" type="button" data-ref="#newsEmail">Gủi</button>
+								</div>
+								<div class="social">
+									<a href="" title=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+									<a href="" title=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+									<a href="" title=""><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright"><div class="container"><span>Copyright© 2016. All Rights Reserved</span></div></div>
+		</footer>
+	</div><!-- .wrapper -->
+
+	<!-- Javascript -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/swiper.jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- <script src="assets/js/wow.min.js"></script> -->
+	<script type="text/javascript" src="assets/js/moment.min.js"></script>
+	<script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+	<script src="assets/js/custom.js"></script>

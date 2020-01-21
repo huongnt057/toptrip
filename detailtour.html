@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,800" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Home Page</title>
+
+	<!-- Bootstrap -->
+	<link href="assets/css/aos.min.css" rel="stylesheet">
+	<link href="assets/css/swiper.min.css" rel="stylesheet">
+	<link href="assets/css/lightgallery.min.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-precomposed.png">
+	<link rel="icon" href="assets/ico/favicon.ico">
+</head>
+
+<body class="detail-tour" data-active="detail-tour" id="page" data-spy="scroll" data-target=".navbar" data-offset="100">
+	<div class="wrapper">
+		<header id="header" class="site-header">
+				<div class="container">
+					<nav id="sticky-navbar" class="navbar navbar-default navbar-fixed-top nav-catogery" role="navigation" data-spy="affix" data-offset-top="60" data-offset-bottom="244">
+					<div class="container container-lg">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<a href="#" id="mobile-search" class="mb-search-pc visible-xs toggle-cascade" data-content=".box-search">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</a>
+							<!-- show icon search mobile -->
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand navbar-logo" href="index.html"><img class="default-logo" src="assets/images/logo-white.svg" alt="Logo"><img class="secondary-logo" src="assets/images/logo-white.svg" alt="Logo"></a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav menutop">
+								<li class="active"><a href="listtour.html">Tour hấp dẫn</a></li>
+								<li><a href="new.html">Cẩm nang du lịch</a></li>
+								<li><a href="listtour.html">Thông tin tour</a></li>
+							</ul>
+							<ul class="nav navbar-nav select-language">
+								<li class="dropdown open">
+			                       <a href="#" data-toggle="modal" data-target="#mysupport"> 
+			                            <i class="icon icon-support" aria-hidden="true"></i>
+			                        </a>
+			                    </li>
+			                    <li class="dropdown">
+			                    	<a href="#" class="dropdown-toggle" id="language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> 
+			                    			Tiếng Anh
+			                    			<i class="fa fa-angle-down" aria-hidden="true"></i>
+			                    	</a>
+			                    	<ul class="dropdown-menu language" aria-labelledby="language">
+				                    	 <li>
+					                    	 <a href="#">Tiếng Việt</a>
+
+				                    	 </li>
+			                    	</ul>
+			                    </li>
+							</ul>	
+							<!-- popup support -->
+							<div id="mysupport" class="modal fade model-popup" role="dialog">
+							  <div class="modal-dialog">
+
+							    <!-- Modal content-->
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal">&times;</button>
+							        <h4 class="modal-title">Hỗ trợ</h4>
+							      </div>
+							      <div class="modal-body">
+							        <p class="text-center">Gọi ngay đến số  08 526 565 để được hỗ trợ</p>
+							      </div>
+							      
+							    </div>
+
+							  </div>
+							</div>
+						</div><!-- /.navbar-collapse -->
+					</div>
+				</nav>
+				</div>
+			</header>
+<main id="main" class="site-main">
+	<div class="container">
+		<div class="breadcrumb-scroll">
+			<ul	class="breadcrumb scroll-y">
+				<li><a href="index.html">Trang chủ</a></li>
+				<li><a href="index.html">Tour Hà Nội</a></li>
+				<li class="active">Tour du lịch Hà Nội Nha Trang 2 ngày 2 đêm</li>
+			</ul>
+		</div>
+		<div class="row">
+			<div id="sidebar-scroll" class="sidebar-mb">
+				<aside class="col-md-sidebar sidebar-fix">
+					<div class="sidebar-search box box-search visible-xs visible-sm">
+						<div class="sidebar-blue-header">
+							<h3>
+                                Tìm Kiếm Tour
+                            </h3>
+                            <a class="close-sidebar visible-xs" href="#">
+	                            <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+						</div>
+						<div class="sidebar-search-body">
+							<form class="form-search" action="/quick-search">
+								<div class="form-group">
+									<input id="search_tour" type="text" name="" class="form-control" placeholder="Bạn muốn tìm tour?" autocomplete="off">
+								</div>
+								<div class="form-group">
+									<label>Điểm khởi hành</label>
+									<select class="sidebar-search-city form-control" name="start-city" tabindex="-1" aria-hidden="true">
+                                        <option value="2">Hà Nội</option>
+                                        <option value="3">Hồ Chí Minh</option>
+                                        <option value="65">Đà Nẵng</option>
+                                        <option value="17">Khánh Hòa</option>
+                                        <option value="38">Lâm Đồng</option>
+                                        <option value="19">Thừa Thiên Huế</option>
+                                    </select>    
+								</div>
+								<div class="form-group clearfix">
+									<label>Thời gian khởi hành</label>
+									<div class="input-group">
+										<input type="text" name="" class="form-control date" value="13/04/2017">
+										<i class="fa fa-calendar"></i>
+									</div>
+									<div class="input-group">
+										<input type="text" name="" class="form-control date" value="13/04/2017">
+										<i class="fa fa-calendar"></i>
+									</div>
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn btn-submit btn-primary">Tìm tour</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- end sidebar search -->
+					<div class="sidebar-pricetotal box">
+						<div class="sidebar-blue-header">
+							<h3>
+                                Thông tin giá
+                            </h3>
+						</div>
+						<div class="sidebar-pricetotal-body">
+							<div class="sidebar-pricetotal-row toptile">
+								<span class="type-price">Giá vé</span>
+								<span class="typen-people-first">Số người</span>
+								<span class="type-totlal">Tổng giá</span>
+							</div>
+							<div class="sidebar-pricetotal-row aldult">
+								<span class="type-price">Người lớn</span>
+								<span class="typen-people">3</span>
+								<span class="type-totlal">150.000đ</span>
+							</div>
+							<div class="sidebar-pricetotal-row child">
+								<span class="type-price">Trẻ em</span>
+								<span class="typen-people">3</span>
+								<span class="type-totlal">150.000đ</span>
+							</div>
+							<div class="sidebar-pricetotal-row infant">
+								<span class="type-price">Trẻ sơ sinh</span>
+								<span class="typen-people">3</span>
+								<span class="type-totlal">150.000đ</span>
+							</div>
+							<div class="sidebar-pricetotal-row total">
+								<span>Tổng</span>
+								<span class="total-price">650.000đ</span>
+							</div>
+							<div class="sidebar-pricetotal-row deposit">
+								<span>Thanh toán trước</span>
+								<span>650.000đ</span>
+							</div>
+							<div class="sidebar-pricetotal-row payment">
+								<span>Thanh toán toàn bộ</span>
+								<span class="payment-price">650.000đ</span>
+							</div>
+						</div>
+					</div>
+					<!-- end sidebar pricetotal show in detail tour -->
+					<a class="btn btn-primary btn-sidebar" href="booktour.html">đặt tour</a>
+					<!--<div class="slidebar-link sidebar">
+						<ul>
+							<li class="active"><a href="#infotour">Thông tin tour</a></li>
+							<li><a href="#pricedetail">Giá chi tiết</a></li>
+							<li><a href="#introtour">Giới thiệu tour</a></li>
+							<li><a href="#timelinetour">Lịch trình</a></li>
+							<li><a href="#servicetour">Lựa chọn dịch vụ</a></li>
+						</ul>
+					</div>-->
+					<!-- slidebar-link -->
+					<div class="sidebar-saletour box top-buffer hidden-xs hidden-sm">	
+						<div class="sidebar-header" data-toggle="collapse"  href="#sidebar-body-saletour" aria-expanded="true" aria-controls="sidebar-body-saletour">
+							<span>Tour liên quan<i class="fa fa-angle-down" aria-hidden="true"></i></span>
+						</div>
+						<div class="saletour-body panel-collapse collapse in" id="saletour-body-typetour">
+							<ul>
+								<li class="clearfix">
+									<a href="#" class="sidebar-img-sale"><img src="assets/images/tour-img-5.jpg" alt=""></a>
+									<h3><a href="#">Tour đi Mộc Châu 2 ngày</a></h3>
+									<span>Giá chỉ từ : 230,000đ</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" class="sidebar-img-sale"><img src="assets/images/tour-img-5.jpg" alt=""></a>
+									<h3><a href="#">Tour đi Mộc Châu 2 ngày</a></h3>
+									<span>Giá chỉ từ : 230,000đ</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" class="sidebar-img-sale"><img src="assets/images/tour-img-5.jpg" alt=""></a>
+									<h3><a href="#">Tour đi Mộc Châu 2 ngày</a></h3>
+									<span>Giá chỉ từ : 230,000đ</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" class="sidebar-img-sale"><img src="assets/images/tour-img-5.jpg" alt=""></a>
+									<h3><a href="#">Tour đi Mộc Châu 2 ngày</a></h3>
+									<span>Giá chỉ từ : 230,000đ</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- end sidebar-tour-sale-->
+					<div class="sidebar-saletour box top-buffer hidden-xs hidden-sm">	
+						<div class="sidebar-header" data-toggle="collapse"  href="#sidebar-body-saletour" aria-expanded="true" aria-controls="sidebar-body-saletour">
+							<span>Tour khuyến mãi<i class="fa fa-angle-down" aria-hidden="true"></i></span>
+						</div>
+						<div class="saletour-body panel-collapse collapse in" id="saletour-body-typetour">
+							<ul>
+								<li class="clearfix">
+									<a href="#" class="sidebar-img-sale"><img src="assets/images/tour-img-5.jpg" alt=""></a>
+									<h3><a href="#">Tour đi Mộc Châu 2 ngày</a></h3>
+									<span>Giá chỉ từ : 230,000đ</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" class="sidebar-img-sale"><img src="assets/images/tour-img-5.jpg" alt=""></a>
+									<h3><a href="#">Tour đi Mộc Châu 2 ngày</a></h3>
+									<span>Giá chỉ từ : 230,000đ</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" class="sidebar-img-sale"><img src="assets/images/tour-img-5.jpg" alt=""></a>
+									<h3><a href="#">Tour đi Mộc Châu 2 ngày</a></h3>
+									<span>Giá chỉ từ : 230,000đ</span>
+								</li>
+								<li class="clearfix">
+									<a href="#" class="sidebar-img-sale"><img src="assets/images/tour-img-5.jpg" alt=""></a>
+									<h3><a href="#">Tour đi Mộc Châu 2 ngày</a></h3>
+									<span>Giá chỉ từ : 230,000đ</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- end sidebar-tour-sale-->
+					<div class="sidebar-city box top-buffer hidden-xs hidden-sm">	
+						<div class="sidebar-header" data-toggle="collapse"  href="#sidebar-body-city" aria-expanded="true" aria-controls="sidebar-body-city">
+							<span>Điểm đến phổ biến<i class="fa fa-angle-down" aria-hidden="true"></i></span>
+						</div>
+						<div class="sidebar-body panel-collapse collapse in" id="sidebar-body-city">
+							<div class="city-district">Miền bắc<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+							<ul	class="nav nav-check-list">
+								<li>
+									<label>
+										<span class="ui-check"><input type="checkbox"></span>
+										<span class="interval-price">Hải Phòng</span>
+									</label> 
+								</li>
+								<li class="active">
+									<label>
+										<span class="ui-check"><input type="checkbox"></span>
+										<span class="interval-price">Hưng Yên</span>
+									</label> 
+								</li>
+							</ul>	
+							<div class="city-district">Miền Trung<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+							<ul	class="nav nav-check-list">
+								<li>
+									<label>
+										<span class="ui-check"><input type="checkbox"></span>
+										<span class="interval-price">Khánh Hòa</span>
+									</label> 
+								</li>
+								<li class="active">
+									<label>
+										<span class="ui-check"><input type="checkbox"></span>
+										<span class="interval-price">Quảng Ngãi</span>
+									</label> 
+								</li>
+							</ul>	
+						</div>
+					</div>
+					<!-- end sidebar-city-->
+				</aside>
+			</div>
+			<div class="col-md-9 col-sm-12 col-xs-12">
+				<div class="detailtour">
+					<div class="detailtour-header-title clearfix">
+						<h1 class="pull-left">Tour Du Lịch Đà Lạt - Văn Hóa Cồng Chiêng Trong 5 Ngày</h1>
+						<span class="tour-rating pull-right"
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="share-adress clearfix">
+						<div class="pull-left share-face">
+							<iframe name="fdda22e9ff2668" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.7/plugins/like.php?action=like&amp;app_id=857393964278669&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F_dMxoUH0Bax.js%3Fversion%3D42%23cb%3Df1f65d2975ee3e4%26domain%3Dmytour.vn%26origin%3Dhttps%253A%252F%252Fmytour.vn%252Ff27232bf7325664%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmytour.vn%2Ftour%2F8963-tour-du-lich-da-lat-van-hoa-cong-chieng-trong-1-ngay.html&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=false" style="border: none; visibility: visible; width: 124px; height: 20px;" class=""></iframe>
+						</div>
+						<div class="pull-right">
+							Hà nội - Nha Trang<i class="fa fa-map-marker" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="detailtour-price-mb visible-xs clearfix">
+						<span class="pull-left dt-price">Giá:120.000 đ</span>
+						<a class="btn btn-primary btn-detail pull-right">đặt tour</a>
+					</div>
+					<!-- show price mobile -->
+					<!-- end titile -->
+					<div id="carousel-tourdetail" class="carousel slide carousel-tour" data-ride="carousel">
+					  <!-- Wrapper for slides -->
+						 <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						    	<img src="assets/images/slide1.jpg" alt="...">
+						    </div>
+						    <div class="item">
+						    	<img src="assets/images/slide1.jpg" alt="...">
+						    </div>
+						   <div class="item">
+						   		<img src="assets/images/slide1.jpg" alt="...">
+						    </div>
+						    <div class="item">
+						    	<img src="assets/images/slide1.jpg" alt="...">
+						    </div>	
+						    <div class="item">
+						    	<img src="assets/images/slide1.jpg" alt="...">
+						    </div>
+						     <div class="item">
+						    	<img src="assets/images/slide1.jpg" alt="...">
+						    </div>
+						 </div>
+
+					  <!-- Controls -->
+					   <a class="left carousel-control" href="#carousel-tourdetail" role="button" data-slide="prev">
+					    <span class="fa fa-angle-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-tourdetail" role="button" data-slide="next">
+					    <span class="fa fa-angle-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					   <!-- Indicators -->
+						<ol class="carousel-indicators thumb-tip">
+						    <li data-target="#carousel-tourdetail" data-slide-to="0" class="active">
+						    	<a href="javascript:void(0)" rel="thubnail-popover" data-img-src="assets/images/slide-thumb.jpg" data-original-title="" title="">
+			                       <img src="assets/images/slide-thumb1.jpg" alt="...">
+			                    </a>
+						    </li>
+						    <li data-target="#carousel-tourdetail" data-slide-to="1">
+						    	<a href="javascript:void(0)" rel="thubnail-popover" data-img-src="assets/images/slide-thumb.jpg" data-original-title="" title="">
+			                       <img src="assets/images/slide-thumb2.jpg" alt="...">
+			                    </a>
+						    </li>
+						    <li data-target="#carousel-tourdetail" data-slide-to="2">
+						    	<a href="javascript:void(0)" rel="thubnail-popover" data-img-src="assets/images/slide-thumb.jpg" data-original-title="" title="">
+			                       <img src="assets/images/slide-thumb1.jpg" alt="...">
+			                    </a>
+						    </li>
+						    <li data-target="#carousel-tourdetail" data-slide-to="3">
+						    	<a href="javascript:void(0)" rel="thubnail-popover" data-img-src="assets/images/slide-thumb.jpg" data-original-title="" title="">
+			                       <img src="assets/images/slide-thumb.jpg" alt="...">
+			                    </a>
+						    </li>
+						     <li data-target="#carousel-tourdetail" data-slide-to="4">
+						    	<a href="javascript:void(0)" rel="thubnail-popover" data-img-src="assets/images/slide-thumb.jpg" data-original-title="" title="">
+			                       <img src="assets/images/slide-thumb1.jpg" alt="...">
+			                    </a>
+						    </li>
+						     <li data-target="#carousel-tourdetail" data-slide-to="5">
+						    	<a href="javascript:void(0)" rel="thubnail-popover" data-img-src="assets/images/slide-thumb.jpg" data-original-title="" title="">
+			                       <img src="assets/images/slide-thumb2.jpg" alt="...">
+			                    </a>
+						    </li>
+						</ol>
+					</div>
+					<!-- slide detail tour -->
+					<div class="detailtour-content">
+						<div class="detailtour-header" id="infotour">
+							thông tin tour
+						</div>
+						<div class="detailtour-content-info">
+							<ul>
+								<li>
+									<span>Ngày xuất phát</span>
+									<strong>8h - 20/2/2017</strong>
+								</li>
+								<li>
+									<span>Thời gian</span>
+									<strong>8h - 20/2/2017</strong>
+								</li>
+								<li>
+									<span>Địa điểm xuất phát</span>
+									<span><strong>Hà Nội</strong><a data-toggle="modal" data-target="#mycity"><i class="fa fa-pencil editcity" aria-hidden="true"></i></a></span>
+								</li>
+								<li>
+									<span>Địa điểm đến</span>
+									<strong>Nha Trang</strong>
+								</li>
+								<li>
+									<span>Phương tiện</span>
+									<strong>Ô tô</strong>
+								</li>
+							</ul>
+							 <!-- Popup city-->
+							<div id="mycity" class="modal fade model-popup" role="dialog">
+							  <div class="modal-dialog">
+
+							    <!-- Modal content-->
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal">&times;</button>
+							        <h4 class="modal-title">Chọn địa điểm đi</h4>
+							      </div>
+							      <div class="modal-body clearfix">
+								      <div class="pull-left selectcity">
+							      		<form action="" method="get" accept-charset="utf-8">
+								       	 	<select class="form-control ip-text" name="Passengerscountry" tabindex="-1" aria-hidden="true" id="Passengers-country"> 
+		                                        <option value="2">Việt Nam</option>
+		                                        <option value="3">Philippine</option>
+		                                        <option value="65">Singapore</option>
+		                                    </select>  
+								       </form> 
+								      </div>
+								      <div class="pull-right select-btn text-center">
+								      	<button type="button" class="btn btn-primary btn-popup" data-dismiss="modal">Tìm tour</button>
+								      </div>
+							      </div>
+							    </div>
+
+							  </div>
+							</div>
+						</div>
+						<!-- end info tour -->
+						<div class="detailtour-header" id="introtour">
+							giới thiệu tổng quan
+						</div>
+						<div class="intro-tour">
+							<p>Mộc Châu là cao nguyên rộng lớn và xinh đẹp nhất vùng núi phía Bắc thuộc tỉnh Sơn La, nằm trên cung đường Tây bắc nổi tiếng với cảnh quan kỳ vĩ, những ngôi làng xinh xắn ven đường, cánh đồng hoa cải, hoa đào, hoa mận trải dài bất tận. Thêm vào đó, tiết trời se lạnh kèm theo lớp sương mù dày đặc khiến cảnh vật thiên nhiên nơi đây đẹp lạ, mê mẩn hồn người. Chính những nét đẹp đó đã thu hút đông đảo khách du lịch tìm đến đây trải nghiệm.</p>
+						</div>
+						<!-- end  Introduction-->
+						<div class="detailtour-header" id="pricedetail">
+							giá chi tiết
+						</div>
+						<div class="detailtour-content-price">
+							<strong>Giá trọn gói</strong>
+							<ul>
+								<li> - Người lớn  : 15.000đ</li>
+								<li> - Người lớn  : 35.000đ</li>
+							</ul>
+							<strong>Bao gồm</strong>
+							<ul>
+								<li> - Bao gồm vé tham quan Xe, tàu vận chuyển, hướng dẫn viên và phí tham quan các đảo</li>
+								<li> - Xem xiếc thú Gấu, Voi, Trăn, Khỉ, Chó, Dê</li>
+								<li> - Ăn theo chương trình (tiêu chuẩn 150.000 đ/khách)
+								</li>
+								<li>- Phí tham quan các điểm theo chương trình.</li>
+								<li> - Ghế lều & tắm nước ngọt</li>
+							</ul>
+							<strong>Không Bao gồm</strong>
+							<ul>
+								<li> - Bao gồm vé tham quan Xe, tàu vận chuyển, hướng dẫn viên và phí tham quan các đảo</li>
+								<li> - Xem xiếc thú Gấu, Voi, Trăn, Khỉ, Chó, Dê</li>
+								<li> - Ăn theo chương trình (tiêu chuẩn 150.000 đ/khách)
+								</li>
+								<li>- Phí tham quan các điểm theo chương trình.</li>
+								<li> - Ghế lều & tắm nước ngọt</li>
+							</ul>
+						</div>
+					</div>
+					<!-- detailtour-price -->
+					<div class="detailtour-header" id="timelinetour">
+							Lịch trình chi tiết
+					</div>
+					<div class="detailtour-content-body">
+						<div class="timeline">
+							<div class="timeline-item" data-toggle="collapse" href="#timeline-1">
+								<div class="timeline-item-icon">
+									<span>1</span>
+								</div>
+								<div class="timeline-item-content">
+									<div class="timeline-item-header clearfix">
+										<span class="pull-left datelist">Ngày 1: Hà Nội - Bản Lác - Dải Yếm</span>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+										<span class="pull-right meal"> Ăn Sáng - trưa - tối</span>
+									</div>
+									<div class="timeline-item-description panel-collapse collapse in" id="timeline-1">
+										<p><strong>Sáng: </strong>Xe và HDV Fivestar Travel đón quý khách tại điểm hẹn khởi hành đi Bản Lác, Mai Châu, Hoà Bình (cách Hà Nội 130 km). Trên đường đi, quý khách sẽ được chiêm ngưỡng cảnh núi non trùng điệp vùng Tây Bắc tổ quốc. Trên đường đi Quý khách dừng nghỉ tại Lương Sơn Hòa Bình. Xe dừng trên đèo Thung Khe để quý khách ngắm cảnh, chụp ảnh toàn cảnh thung lũng Mai Châu. 
+										Trưa: Xe đưa quý khách đến Bản Lác - Thung lũng Mai Châu. Quý khách dùng bữa trưa tại Homestay của người thái với các món ăn truyền thống của núi rừng Tây Bắc. 
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="timeline-item" data-toggle="collapse" href="#timeline-2">
+								<div class="timeline-item-icon">
+									<span>2</span>
+								</div>
+								<div class="timeline-item-content">
+									<div class="timeline-item-header clearfix">
+										<span class="pull-left datelist">Ngày 2: Hà Nội - Bản Lác - Dải Yếm</span>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+										<span class="pull-right meal"> Ăn Sáng - trưa - tối</span>
+									</div>
+									<div class="timeline-item-description panel-collapse collapse in" id="timeline-2">
+										<p><strong>Sáng: </strong>Xe và HDV Fivestar Travel đón quý khách tại điểm hẹn khởi hành đi Bản Lác, Mai Châu, Hoà Bình (cách Hà Nội 130 km). Trên đường đi, quý khách sẽ được chiêm ngưỡng cảnh núi non trùng điệp vùng Tây Bắc tổ quốc. Trên đường đi Quý khách dừng nghỉ tại Lương Sơn Hòa Bình. Xe dừng trên đèo Thung Khe để quý khách ngắm cảnh, chụp ảnh toàn cảnh thung lũng Mai Châu. 
+										Trưa: Xe đưa quý khách đến Bản Lác - Thung lũng Mai Châu. Quý khách dùng bữa trưa tại Homestay của người thái với các món ăn truyền thống của núi rừng Tây Bắc. 
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="timeline-item" data-toggle="collapse" href="#timeline-3">
+								<div class="timeline-item-icon">
+									<span>3</span>
+								</div>
+								<div class="timeline-item-content">
+									<div class="timeline-item-header clearfix"> 
+										<span class="pull-left datelist">Ngày 3: Hà Nội - Bản Lác - Dải Yếm</span>
+										<i class="fa fa-angle-down" aria-hidden="true"></i>
+										<span class="pull-right meal"> Ăn Sáng - trưa - tối</span>
+									</div>
+									<div class="timeline-item-description panel-collapse collapse in" id="timeline-3">
+										<p><strong>Sáng: </strong>Xe và HDV Fivestar Travel đón quý khách tại điểm hẹn khởi hành đi Bản Lác, Mai Châu, Hoà Bình (cách Hà Nội 130 km). Trên đường đi, quý khách sẽ được chiêm ngưỡng cảnh núi non trùng điệp vùng Tây Bắc tổ quốc. Trên đường đi Quý khách dừng nghỉ tại Lương Sơn Hòa Bình. Xe dừng trên đèo Thung Khe để quý khách ngắm cảnh, chụp ảnh toàn cảnh thung lũng Mai Châu. 
+										Trưa: Xe đưa quý khách đến Bản Lác - Thung lũng Mai Châu. Quý khách dùng bữa trưa tại Homestay của người thái với các món ăn truyền thống của núi rừng Tây Bắc. 
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<!-- detailtour-content -->
+					<article class="service-tour">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="detailtour-header" id="timelinetour">
+									Chọn điểm đến yêu thích
+								</div>
+								<div class="service-tour-body">	
+									<ul class="select-place">
+										<li class="clearfix active">
+											<img src="assets/images/slide-thumb1.jpg" class="img-responsive" alt="">
+											<h5>Bản Lác- Thác Dải Yếm</h5>
+											<p> Được ví như một địa điểm tuyệt đẹp</p>
+										</li>
+										<li class="clearfix">
+											<img src="assets/images/slide-thumb1.jpg" class="img-responsive" alt="">
+											<h5>Bản Lác- Thác Dải Yếm</h5>
+											<p> Được ví như một địa điểm tuyệt đẹp</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="detailtour-header" id="timelinetour">
+									Chọn món ngon
+								</div>
+								<div class="service-tour-body">	
+									<ul class="select-food">
+										<li class="clearfix">
+											<div class="img-circle"><img src="assets/images/food.jpg" class="img-responsive" alt=""></div>
+											<h5>Tôm hùm ngon khó cưỡng</h5>
+											<span class="price">Giá : <strong>120,000đ</strong>/ 1 suất</span>
+											<span class="place">	Nhà hàng Hoàng Hà</span>
+										</li>
+										<li class="clearfix">
+											<div class="img-circle"><img src="assets/images/food.jpg" class="img-responsive" alt=""></div>
+											<h5>Tôm hùm ngon khó cưỡng</h5>
+											<span class="price">Giá : <strong>120,000đ</strong>/ 1 suất</span>
+											<span class="place">	Nhà hàng Hoàng Hà</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</article>
+					<a href="booktour.html" title="dat tour" class="btn btn-primary btn-bottom">Đặt tour</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+		<footer id="footer" class="site-footer">
+		<p id="back-top" style="display: block;">
+	    	<a href="#top"><span><i class="fa fa-arrow-up" aria-hidden="true"></i></span></a>
+	    </p>
+				<div class="site-info">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-2 col-md-2 col-xs-12">
+								<img src="assets/images/logo-color.svg" alt="" class="img-logo">
+							</div>
+							<div class="col-sm-3 col-md-4 col-xs-12 infocompany">
+								<ul>
+									<li class="namecompany">Công ty TNHH Toptrip Việt Nam</li>
+									<li><i class="fa fa-map-marker" aria-hidden="true"></i>Địa chỉ: Tầng 3A tòa nhà Hoàng Ngọc - Duy Tân - Cầu Giấy, Hà Nội.</li>
+									<li><i class="fa fa-phone" aria-hidden="true"></i>04 6260 3530</li>
+								</ul>
+							</div>
+							<div class="col-sm-3 col-md-3 col-xs-12 linkfooter">
+								<ul>
+									<li>Hỗ trợ online</li>
+									<li><a href="intro.html" title="">Giới thiệu</a></li>
+									<li><a href="support.html" title="">Thanh toán an toàn & linh hoạt</a></li>
+									<li><a href="support.html" title="">Đặt tour dễ dàng & nhanh chóng</a></li>
+									<li><a href="contact.html" title="">Liên hệ</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-3 col-md-3 col-xs-12">
+								<span>Sign up for our mailing list to get latest updates and offers.</span>
+								<div class="form-group newsletter">
+									<input id="newsEmail" type="text" class="form-control" data-type="email" placeholder="Enter your email address" name="email" autocomplete="off">
+									<button class="btn newsbtn" type="button" data-ref="#newsEmail">Gủi</button>
+								</div>
+								<div class="social">
+									<a href="" title=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+									<a href="" title=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+									<a href="" title=""><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright"><div class="container"><span>Copyright© 2016. All Rights Reserved</span></div></div>
+		</footer>
+	</div><!-- .wrapper -->
+
+	<!-- Javascript -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/swiper.jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- <script src="assets/js/wow.min.js"></script> -->
+	<script type="text/javascript" src="assets/js/moment.min.js"></script>
+	<script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+	<script src="assets/js/custom.js"></script>

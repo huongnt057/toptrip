@@ -1,0 +1,439 @@
+// --------------------------------------------------
+// COMMONS STYLE
+// --------------------------------------------------
+/*Import Fonts  toptrip*/
+@font-face {
+  font-family: 'toptrip';
+  src:  url('@{icon-font-path}/toptrip.eot?dxae8');
+  src:  url('@{icon-font-path}/toptrip.eot?dxae8#iefix') format('embedded-opentype'),
+    url('@{icon-font-path}/toptrip.ttf?dxae8') format('truetype'),
+    url('@{icon-font-path}/toptrip.woff?dxae8') format('woff'),
+    url('@{icon-font-path}/toptrip.svg?dxae8#toptrip') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'toptrip' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-Children:before {
+  content: "\e901";
+}
+.icon-adult-avatar:before {
+  content: "\e902";
+}
+.icon-crawling-baby-silhouette:before {
+  content: "\e900";
+}
+.icon-support:before {
+  content: "\e903";
+}
+//HOVER
+
+
+// OVERRIDE: OVERRIDE STYLE
+// -------------------------------------
+/* Header */
+.navbar-default.affix{
+	background-color: @color-third;
+		
+	.navbar-nav > li > a{
+		padding-top: 10px !important;
+		padding-bottom: 10px !important;
+	}
+}
+.menutop{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.navbar-nav > li{
+	height: 50px;
+	> a {
+		position: relative;
+		height: 50px;
+		line-height: 30px;
+		&:after {
+			display: none;
+			content: "";
+			width: 100%;
+			height: 1px;
+			position: absolute;
+			bottom:-2px;
+			left: 0;
+			opacity: 0;
+			.transition(all .5s ease-in-out);
+		}
+	}
+	&.active {
+		> a {
+			position: relative;
+			font-weight: 500;
+			color:#fff !important;
+			&:after {
+				opacity: 1;
+			}
+		}
+		&:first-child {
+			> a:after {
+				//display: none;
+			}
+		}
+	}
+	> a {
+		text-transform: uppercase;
+		font-size: 15px;
+		padding:10px 25px;
+		font-weight: 300;
+	}
+	
+}
+.nav-catogery .navbar-nav > li{
+	&.active{
+			background-color: #0b8e9e;
+
+	}
+
+}
+ul.select-language{
+	margin-left: 70px;
+	>li{
+		a{
+			text-transform: inherit;
+			padding-left: 20px;
+			padding-right:0px;
+			font-size: 14px;
+
+			i{
+				color:#fff;
+				&.icon-support{
+					font-size: 25px;
+					padding-right: 20px;
+					border-right: 1px solid rgba(255, 255, 255, 0.5);
+				}
+			}
+		}
+	}
+}
+.dropdown-menu.language{
+	background-color: #fff;
+	border-radius: 0;
+	border:0;
+	min-width: auto;
+	right: 0;
+	li{
+		a{
+			color:#666;
+			font-size: 13px;
+			padding-left: 15px;
+			&:hover{
+				color:@color-primary;
+			}
+		}
+	}
+}
+.secondary-logo {
+	display: none!important;
+}
+.navbar-default {
+	&, .navbar-nav > li > a, .navbar-brand {
+		.transition(all .5s ease-in-out);
+	}
+	&.sticky, &.affix {
+		top: 0;
+		
+		.opacity(.95);
+		min-height: 50px;
+		top: 0;
+		.navbar-nav > li > a {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			&:after {
+				display: block;
+			}
+		}
+		.default-logo {
+			display: none!important;
+		}
+		.secondary-logo {
+			display: block!important;
+		}
+		.navbar-brand {
+			height: 60px;
+			
+		}
+	}
+}
+.navbar-home .navbar-logo .default-logo{
+	margin-top: 35px
+}
+/*Intro slide home*/
+.carousel-caption{
+	position: absolute;
+	top:30%;
+	z-index: 100;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    h1{
+    	text-transform: uppercase;
+		font-weight: 600;
+		font-size: 35px;
+		text-shadow: 3px 3px 5px rgba(8, 0, 0, 0.52);
+		margin-bottom: 20px;
+    }
+    h2{
+    	font-size: 18px;
+    	text-shadow: 3px 3px 5px rgba(8, 0, 0, 0.52);
+    }
+}
+/* Form booking*/
+.tabs-home{
+	>li{
+
+		&.active{
+			a{
+				background-color: @color-primary;
+				color:#fff;
+				font-weight: 600;
+				font-size: 16px;
+				border: 0;
+			}
+		}
+		>a{
+			background-color: rgba(255, 255, 255, 0.5);
+			transition: background-color 0.5s ease;
+			color:@color-third;
+			font-weight: 600;
+			font-size: 16px;
+			padding:10px 30px;
+			border: 0;
+			margin-right: 10px;
+		}
+	}
+}
+.booking-form{
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 0 4px 4px 4px;
+	padding:20px 10px;
+	.main-form{
+		.col-item{
+			padding-right: 5px;
+			padding-left: 5px;
+			&:last-child{
+				padding-right: 15px;
+			}
+		}
+
+	}
+	.form-group{
+		position: relative;
+		label{
+			color:#333;
+			font-weight: 300;
+			font-size: 14px;
+		}
+		input{
+			width: 100%;
+			height: 36px;
+			border-radius: 3px;
+			border: 1px solid #ccc;
+			color:#666;
+			font-size: 13px;
+			padding-left: 10px;
+		}
+		i{
+			position: absolute;
+			color:@color-primary;
+			font-size: 13px;
+			right: 10px;
+			bottom:10px;
+			&.icon-Children{
+				font-size: 23px;
+				bottom:6px;
+			}
+			&.icon-crawling-baby-silhouette{
+				font-size:17px;
+				bottom:8px;
+			}
+		}
+	}
+}
+/* Header catogery*/
+.nav-catogery{
+	background-color:@color-primary;
+	border-bottom: 3px solid #0b8e9e;
+	.navbar-logo{
+		padding:0;
+		.default-logo, .secondary-logo{
+			width: 150px;
+			margin-top: 3px;
+		}
+	}
+	.menutop{
+		border: 0;
+		li{
+			a{
+				font-size: 14px;
+				color:#fff;
+			}
+		}
+	}
+}
+.left-circle, .right-circle{
+	  position: absolute;
+	  top: 50%;
+	  z-index: 5;
+	  display: inline-block;
+	  margin-top: -10px;
+  	  width:53px;
+	  height:53px;
+	  background-color:rgba(255,255,255,0.8);
+	  border-radius:53px;
+	  line-height:60px;
+	  >i{
+		font-size:35px;
+	  	color:@color-primary;
+	  	box-shadow: none;
+	}
+}
+/* End header*/
+.btn-filter-show{
+	background-color: @color-primary;
+	color:#fff;
+	text-transform: uppercase;
+	padding:5px 40px;
+	i{
+		margin-right: 10px;
+	}
+	&:focus,&:hover{
+		color:#fff
+	}
+}
+/* breadcrumb-scroll*/
+.breadcrumb-scroll{
+	width: 100%;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+	.breadcrumb{
+	position: absolute;
+    width: 100%;
+    white-space: nowrap;
+    padding: 0;
+    list-style-type: none;
+    padding-bottom: 5px;
+    background: none;
+    border-radius: 0;
+		a{
+			font-size: 13px;
+			color:#666;
+			&:hover{
+				color:@color-primary;
+			}
+		}
+		li.active{
+			color:@color-primary;
+		}
+	}
+}
+// COMMON: COMMON STYLE
+// -------------------------------------
+.col-md-sidebar{
+	width: 25%;
+	float: left;
+}
+.nav-tabs.tabs-home{
+		border: none;
+}
+.reset-list{
+	.reset-list();
+}
+body.thanks{
+	background-color: #fff;
+}
+body.booktour{
+	background-color: #f9f9f9;
+}
+#back-top {
+    position: fixed;
+    bottom: 30px;
+    margin-left: 90%;
+    bottom: 0;
+    a{
+	    width: 50px;
+	    height: 50px;
+	    border-radius: 25px;
+	    display: block;
+	    text-align: center;
+	    font-size: 9px;
+	    text-transform: uppercase;
+	    text-decoration: none;
+	    color: #fff;
+	    -webkit-transition: 1s;
+	    -moz-transition: 1s;
+	    transition: 1s;
+	    background-color: @color-primary;
+	    box-shadow: 2px 0 3px #ccc;
+	    span{
+	    	    width: 50px;
+			    height: 50px;
+			    border-radius: 25px;
+			    display: block;
+			    -webkit-border-radius: 2px;
+			    -moz-border-radius: 2px;
+			    border-radius: 2px;
+			    -webkit-transition: 1s;
+			    -moz-transition: 1s;
+			    transition: 1s;
+			    font-size: 25px;
+			    line-height: 50px;
+			}
+    }
+}
+.top-buffer { margin-top:20px; }
+.styletext-s{color:@color-primary;}
+.styletext-p{color:@color-secondary; font-size:15px;}
+.navbar-default .navbar-toggle{
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 40px;
+	width: 40px;
+	height: 40px;
+
+}
+ select:focus, input:focus{
+ 	outline: none;
+ }
+.bggray{
+	background-color: #f9f9f9;
+	border:1px solid #ccc;
+}
+.form-control:active, .form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.breadcrumb-new{
+	padding: 0;
+	margin: 10px 0;
+	.breadcrumb {
+		padding: 0;
+	}
+}
+// Genarate Sprite Images
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+.sprites(@spritesheet-sprites);
+
+// HOOK COMMONS STYLE
+.hook-common-style;
